@@ -18,20 +18,14 @@ public class Main {
 
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                for (int a = 99; a >= 90; a--) {
-                    if (i == 0 && j == 0) {
-                        result[i][j] = 99;
-                    } else if (i == 0 && j > 0) {
-                        result[i][j] = 99 - j;
-                    } else if (i > 0 && j == 0) {
-                        result[i][j] = 99 - (i * 10);
-                    }else if(i>0 && j>0){
-                        result[i][j]=99-j-(i*10);
-                    }
-                }
+
+                result[i][j] = 99 - j - (i * 10);
             }
         }
         return result;
     }
 }
+
+
 //test for git 2nd commit
+//test for git 3d commit
